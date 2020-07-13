@@ -1,0 +1,23 @@
+.presentation {
+  line-height: 1.8;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.firstContainer{
+  margin-top: 7%;
+  margin-left: 6%;
+}
+
+
+.book{
+  display: block;
+  margin-right: 25%;
+}
+
+
+.story {
+  display: block;
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+.projects{
+    background-color: rgba(63, 59, 59, 0.935);
+}
+.Projects-BUTTON {
+    margin-left: 30% !important;
+    margin-top: 5%;
+}
+.S-title {
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    border: solid 10px rgba(0, 0, 0, 0.842);
+    border-style: double;
+    border-spacing: 9px;
+}
+
+.p-title {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+}
+
+.ScreenPHP{
+    margin-top: 7%;
+}
+.php {
+    margin-top: 4%;
+}
+.js {
+    margin-top: 6%;
+}
+.dymed
+{
+    margin-top: 6%;
+}
