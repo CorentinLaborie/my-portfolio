@@ -14,3 +14,13 @@
     margin-top: 2%;
     margin-bottom: 2%;
 }
+.S-title {
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    border: solid 10px rgba(0, 0, 0, 0.842);
+    border-style: double;
+    border-spacing: 9px;
+    color: white;
+
+}

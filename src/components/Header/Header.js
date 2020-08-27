@@ -14,11 +14,13 @@ const Header = () => {
 
   const ToPresentation = () => window.scrollTo(0,0);
   const ToSkills = () => window.scrollTo(0,420);
-  const ToProjects = () =>  window.scrollTo(0,556);
+  const ToProjects = () =>  window.scrollTo(0,600);
   const ToCV = () => window.scrollTo(0,4000);
 return (
     <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
     <Navbar.Brand href="#home">Corentin Laborie, Dev Web Junior</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link className="white-text" onClick={ToPresentation}>Présentation</Nav.Link>
       <Nav.Link className="white-text" onClick={ToSkills}>Mes Compétences</Nav.Link>
@@ -31,6 +33,7 @@ return (
     autoPlay={true}
     controls
     />
+    </Navbar.Collapse>
   </Navbar>
 )};
 export default Header;

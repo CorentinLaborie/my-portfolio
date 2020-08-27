@@ -42,13 +42,13 @@ const Skills = ({ element }) => {
 
   const handleChangeMySkill = (event) => {
     if (event.target.value === "choose") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                                 <Card.Header as="h1">Vous deviez choisir, je crois..</Card.Header>
                              </Card>
       ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
     }
     else if (event.target.value === "php") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                               <Card.Header as="h3">Pour PHP :</Card.Header>
                               <ListGroup variant="flush">
                                 <ListGroup.Item>
@@ -68,7 +68,7 @@ const Skills = ({ element }) => {
       ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
     }
     else if (event.target.value === "js") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                               <Card.Header as="h3">Pour JavaScript :</Card.Header>
                               <ListGroup variant="flush">
                                 <ListGroup.Item>
@@ -96,7 +96,7 @@ const Skills = ({ element }) => {
       ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
     }
     else if (event.target.value === "db") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                               <Card.Header as="h3">Pour la gestion des Databases :</Card.Header>
                               <ListGroup variant="flush">
                                 <ListGroup.Item>
@@ -112,7 +112,7 @@ const Skills = ({ element }) => {
       ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
     }
     else if (event.target.value === "html") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                               <Card.Header as="h3">Intégration Web :</Card.Header>
                               <ListGroup variant="flush">
                                 <ListGroup.Item>
@@ -124,7 +124,7 @@ const Skills = ({ element }) => {
       ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
     }
     else if (event.target.value === "other") {
-      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+      const SkillsResultat = <Card style={{ width: 'auto' }} className="text-center">
                               <Card.Header as="h3">Autres technologies/logiciels :</Card.Header>
                               <ListGroup variant="flush">
                                 <ListGroup.Item>
@@ -141,6 +141,11 @@ const Skills = ({ element }) => {
   return (
     <section className="skills">
       <Container fluid className="SkillfirstContainer">
+        <Row>
+          <Col xs={4} md={2}></Col>
+          <Col><p className="S-title">MES COMPETENCES</p></Col>
+          <Col xs={4} md={2}></Col>
+        </Row>
         <Row>
           <Col xs={6} md={4} className="FirstCol">
             <Form className="SkillForm">

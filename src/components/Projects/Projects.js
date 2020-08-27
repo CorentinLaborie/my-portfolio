@@ -35,7 +35,7 @@ class Projects extends React.Component{
           <Button size="lg" variant="outline-light" className="Projects-BUTTON" type="button" onClick={()=>{window.open("https://github.com/CorentinLaborie/My_New_CSS_GENERATOR", '_blank');}}>Voir sur GitHub ?</Button>
           </Col>
           <Col className="descriptionPHP">
-            <Card className="text-center" border="primary">
+            <Card style={{ width: 'auto' }} className="text-center" border="primary">
               <Card.Header><h3>CSS_GENERATOR</h3></Card.Header>
               <Card.Body>
                 <Card.Subtitle className="mb-2 text-muted"><i>12/2019 Samsung Campus</i></Card.Subtitle>
@@ -52,7 +52,7 @@ class Projects extends React.Component{
         </Row>
         <Row className="js">
           <Col className="descriptionJS">
-            <Card className="text-center" border="warning">
+            <Card style={{ width: 'auto' }} className="text-center" border="warning">
               <Card.Header><h3>Ce Portfolio</h3></Card.Header>
               <Card.Body>
                 <Card.Subtitle className="mb-2 text-muted"><i>07/2020</i></Card.Subtitle>
@@ -68,12 +68,12 @@ class Projects extends React.Component{
         </Row>
         <Row className="dymed">
           <Col className="screenDYMED">
-          <Card border="success">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <Card style={{ width: 'auto' }} border="success">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Card>
           </Col>
           <Col className="descriptionDYMED">
-            <Card className="text-center" border="succes">
+            <Card style={{ width: 'auto' }} className="text-center" border="succes">
               <Card.Header><h3>D.Y.MED</h3></Card.Header>
               <Card.Body>
                 <Card.Subtitle className="mb-2 text-muted"><i>06/2020 Samsung Campus</i></Card.Subtitle>
