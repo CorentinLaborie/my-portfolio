@@ -13,11 +13,11 @@ import Drm_Sqnc from "../../assets/mp3/drm_sqnc.mp3";
 const Header = () => {
 
   const ToPresentation = () => window.scrollTo(0,0);
-  const ToSkills = () => window.scrollTo(0,550);
-  const ToProjects = () =>  window.scrollTo(0,1868);
+  const ToSkills = () => window.scrollTo(0,420);
+  const ToProjects = () =>  window.scrollTo(0,556);
   const ToCV = () => window.scrollTo(0,4000);
 return (
-    <Navbar bg="dark" variant="dark" sticky="top">
+    <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
     <Navbar.Brand href="#home">Corentin Laborie, Dev Web Junior</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link className="white-text" onClick={ToPresentation}>Présentation</Nav.Link>
