@@ -7,10 +7,7 @@ import "./Presentation.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // IMAGES //
-import Logo from "../../assets/images/logo.svg"
 import Bg from "../../assets/images/moi_bg.jpg";
-import Guitare from "../../assets/images/moi_guitare.jpg"; // <img src={Guitare} alt="Au Samsung Campus" /> //
-import Perou from "../../assets/images/moi_perou.jpg"; // <img src={Perou} alt="Gocta, Peru" /> //
 import Slide1 from "../../assets/images/slide1.png" 
 import Slide2 from "../../assets/images/slide2.png" 
 import Slide3 from "../../assets/images/slide3.png" 
@@ -21,17 +18,17 @@ const Presentation = ({ element }) => {
   const MyHR = ({ color }) => (
     <hr
       style={{
+        marginTop: "5px",
         borderColor: color,
       }}
     />
   );
 
   return (
-    <main>
       <section className="presentation">
         <Container fluid className="firstContainer">
         <Row>
-          <Col><Image src={Bg} /></Col>
+          <Col><Image src={Bg} fluid/></Col>
           <Col>        
             <div className="book">
             <Carousel>
@@ -40,6 +37,8 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide1}
                   alt="First slide"
+                  height={330}
+                  width={495}
                 />
               </Carousel.Item>
               <Carousel.Item>
@@ -47,6 +46,8 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide2}
                   alt="second slide"
+                  height={330}
+                  width={495}
                 />
               </Carousel.Item>
               <Carousel.Item>
@@ -54,6 +55,8 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide3}
                   alt="third slide"
+                  height={330}
+                  width={495}
                 />
               </Carousel.Item>
             </Carousel>
@@ -61,8 +64,8 @@ const Presentation = ({ element }) => {
           </Col>
         </Row>
         </Container>
+      <MyHR color="black" />
       </section>
-    </main>
   )
 }
 

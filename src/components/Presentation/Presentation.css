@@ -3,21 +3,25 @@
   height: 100%;
   display: flex;
   width: 100%;
+  margin-bottom: 2%;
 }
 
 .firstContainer{
-  margin-top: 7%;
-  margin-left: 6%;
+  margin-top: 3%;
+  margin-left: 8%;
 }
-
 
 .book{
   display: block;
   margin-right: 25%;
 }
 
-
 .story {
   display: block;
   background-color: black;
+}
+
+.carousel {
+  width: auto;
+  height: auto;
 }

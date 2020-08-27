@@ -6,7 +6,17 @@ import React , { Component} from 'react';
 
   // BACKGROUND WITH REACT-SKY //
   import Sky from 'react-sky';
-
+    // REACT SKY IMAGES //
+    import Blue from "./assets/background/blue.png";
+    import Green from "./assets/background/green.png";
+    import Sakura1 from "./assets/background/sakura1.png";
+    import Sakura2 from "./assets/background/sakura2.png";
+    import Sacred1 from "./assets/background/sacred1.png";
+    import Sacred2 from "./assets/background/sacred2.png";
+    import Sacred3 from "./assets/background/sacred3.png";
+    import Sacred4 from "./assets/background/sacred4.png";
+    import Sacred5 from "./assets/background/sacred5.png";
+  
   // HEADER + STICKY NAVBAR //
   import Header from "./components/Header/Header";
 
@@ -21,16 +31,6 @@ import React , { Component} from 'react';
 // STYLE //
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-  // REACT SKY IMAGES //
-  import Blue from "./assets/background/blue.png";
-  import Green from "./assets/background/green.png";
-  import Sakura1 from "./assets/background/sakura1.png";
-  import Sakura2 from "./assets/background/sakura2.png";
-  import Sacred1 from "./assets/background/sacred1.png";
-  import Sacred2 from "./assets/background/sacred2.png";
-  import Sacred3 from "./assets/background/sacred3.png";
-  import Sacred4 from "./assets/background/sacred4.png";
-  import Sacred5 from "./assets/background/sacred5.png";
 
 
 function App() {

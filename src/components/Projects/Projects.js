@@ -69,7 +69,7 @@ class Projects extends React.Component{
         <Row className="dymed">
           <Col className="screenDYMED">
           <Card border="success">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Card>
           </Col>
           <Col className="descriptionDYMED">

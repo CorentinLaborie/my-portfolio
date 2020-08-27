@@ -1,19 +1,16 @@
-.skills{
-    background-color: rgba(63, 59, 59, 0.835);
-    color: white;
-}
-.Col-Test {
-    width: 97% !important;
-}
-.S-title {
-    text-align: center;
-    font-family: "Gill Sans", sans-serif;
-    font-size: 26px;
-    border: solid 10px rgba(0, 0, 0, 0.842);
-    border-style: double;
-    border-spacing: 9px;
+.SkillfirstContainer{
+    background-color: rgba(63, 59, 59, 0.935);
 }
 
-.needle {
-    background-color: white;
+.FirstCol{
+    margin-left: 8%;
+}
+
+.SkillForm {
+    margin-top: 2%;
+}
+
+#SkillResult{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

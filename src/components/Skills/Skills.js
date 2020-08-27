@@ -1,7 +1,7 @@
 // MODULES //
-import React from 'react';
-import { Card, Carousel, Image, Col, Row, Container } from 'react-bootstrap';
-import GaugeChart from 'react-gauge-chart'
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Card, Image, Col, Row, Container, Form, FormControl, Button,ListGroup,ProgressBar } from 'react-bootstrap';
 
 
 // STYLE //
@@ -17,12 +17,15 @@ import ReactLog from "../../assets/logos/react.png";
 import SqlLog from "../../assets/logos/mysql.jpg";
 import MongoLog from "../../assets/logos/mongodb.jpg";
 import GitLog from "../../assets/logos/git.jpg";
+import NodeLog from "../../assets/logos/nodejs.png";
+import ExpressLog from "../../assets/logos/express.png";
+import JQueryLog from "../../assets/logos/jquery.png";
 
 
 
 
 const Skills = ({ element }) => {
-  
+
   const MyHR = ({ color }) => (
     <hr
       style={{
@@ -30,171 +33,138 @@ const Skills = ({ element }) => {
       }}
     />
   );
-    return (
-        <section className="skills">
-          <Container className="Skill-FirstCont">
-            <Row className="Col-Test"><Col><p className="S-title">MES COMPETENCES</p></Col></Row>
-                <Row> {/*PHP*/}  
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={PhPLog} />
-                      <Card.Body>
-                      <GaugeChart id="gauge-chart1" 
-                        nrOfLevels={20} 
-                        colors={["#FFFFFF", "#001fff"]} 
-                        arcWidth={0.3} 
-                        percent={0.90} 
-                      />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={LaravelLog} />
-                      <Card.Body>
-                        <div>
-                        <GaugeChart id="gauge-chart2" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#FF0000"]} 
-                          arcWidth={0.3} 
-                          percent={0.70} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={SymfLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart3" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#000000"]} 
-                          arcWidth={0.3} 
-                          percent={0.70} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>  
-                <Row style={{marginTop:"2%"}}> {/*JS*/}
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={JSLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart4" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#f0ff00"]} 
-                          arcWidth={0.3} 
-                          percent={0.90} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={HtmlCssLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart5" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#aa00e5"]} 
-                          arcWidth={0.3} 
-                          percent={1} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={ReactLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart6" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#06fbff"]} 
-                          arcWidth={0.3} 
-                          percent={0.80} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-                <Row style={{marginTop:"2%"}}> {/*DB*/}
-                  <Col>
-                  <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={SqlLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart7" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#dda30a"]} 
-                          arcWidth={0.3} 
-                          percent={0.95} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={MongoLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart8" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#02a416"]} 
-                          arcWidth={0.3} 
-                          percent={0.70} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg="dark" 
-                    text="white"
-                    style={{ width: '18rem', color:"white" }}>
-                      <Card.Img variant="top" src={GitLog} />
-                      <Card.Body>
-                        <div>
-                          <GaugeChart id="gauge-chart9" 
-                          nrOfLevels={20} 
-                          colors={["#FFFFFF", "#cd0404"]} 
-                          arcWidth={0.3} 
-                          percent={0.80} 
-                        />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-          </Container>
-      <MyHR color="black" />
-        </section>
-    )
+
+  const [selectskill, setSelectskill] = useState('choose');
+
+  function handleChangeSelectSkill(event) {
+    setSelectskill(event.target.value);
+  };
+
+  const handleChangeMySkill = (event) => {
+    if (event.target.value === "choose") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                                <Card.Header as="h1">Vous deviez choisir, je crois..</Card.Header>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
+    else if (event.target.value === "php") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                              <Card.Header as="h3">Pour PHP :</Card.Header>
+                              <ListGroup variant="flush">
+                                <ListGroup.Item>
+                                  <Image src={PhPLog} roundedCircle/>
+                                  <ProgressBar animated now={85} />
+                                  </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={LaravelLog} roundedCircle/>
+                                  <ProgressBar animated now={60} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={SymfLog} roundedCircle/>
+                                  <ProgressBar animated now={55} />
+                                </ListGroup.Item>
+                              </ListGroup>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
+    else if (event.target.value === "js") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                              <Card.Header as="h3">Pour JavaScript :</Card.Header>
+                              <ListGroup variant="flush">
+                                <ListGroup.Item>
+                                  <Image src={JSLog} roundedCircle/>
+                                  <ProgressBar variant="warning" animated now={80} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={JQueryLog} roundedCircle/>
+                                  <ProgressBar variant="warning" animated now={70} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={NodeLog} roundedCircle/>
+                                  <ProgressBar variant="warning" animated now={65} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={ExpressLog} roundedCircle/>
+                                  <ProgressBar variant="warning" animated now={60} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={ReactLog} roundedCircle/>
+                                  <ProgressBar variant="warning" animated now={80} />
+                                </ListGroup.Item>
+                              </ListGroup>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
+    else if (event.target.value === "db") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                              <Card.Header as="h3">Pour la gestion des Databases :</Card.Header>
+                              <ListGroup variant="flush">
+                                <ListGroup.Item>
+                                  <Image src={SqlLog} roundedCircle/>
+                                  <ProgressBar variant="danger" animated now={90} />
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                  <Image src={MongoLog} roundedCircle/>
+                                  <ProgressBar variant="danger" animated now={70} />
+                                </ListGroup.Item>
+                              </ListGroup>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
+    else if (event.target.value === "html") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                              <Card.Header as="h3">Intégration Web :</Card.Header>
+                              <ListGroup variant="flush">
+                                <ListGroup.Item>
+                                  <Image src={HtmlCssLog} variant="info" roundedCircle/>
+                                  <ProgressBar animated now={90} />
+                                </ListGroup.Item>
+                              </ListGroup>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
+    else if (event.target.value === "other") {
+      const SkillsResultat = <Card style={{ width: '40rem' }} className="text-center">
+                              <Card.Header as="h3">Autres technologies/logiciels :</Card.Header>
+                              <ListGroup variant="flush">
+                                <ListGroup.Item>
+                                  <Image src={GitLog} variant="succes" roundedCircle/>
+                                  <ProgressBar animated now={80} />
+                                </ListGroup.Item>
+                              </ListGroup>
+                             </Card>
+      ReactDOM.render(SkillsResultat, document.getElementById('SkillResult'));
+    }
   }
-  
-  export default Skills;
+
+
+  return (
+    <section className="skills">
+      <Container fluid className="SkillfirstContainer">
+        <Row>
+          <Col xs={6} md={4} className="FirstCol">
+            <Form className="SkillForm">
+              <Form.Group controlId="exampleForm.SelectCustom">
+                <Form.Control value={selectskill} onChange={e => { handleChangeSelectSkill(e); handleChangeMySkill(e) }} as="select" custom>
+                  <option value="choose">Que voulez-vous savoir ?</option>
+                  <option value="html">Integration Web</option>
+                  <option value="php">PHP</option>
+                  <option value="js">JavaScript</option>
+                  <option value="db">DataBase</option>
+                  <option value="other">Autres</option>
+                </Form.Control>
+              </Form.Group>
+            </Form>
+          </Col>
+          <Col xs={3} md={1}></Col>
+          <Col xs={7} md={3} className="LastCol">
+            <div id="SkillResult"></div>
+          </Col>
+        </Row>
+      </Container>
+      <MyHR color="black" />
+    </section>
+  )
+}
+
+export default Skills;

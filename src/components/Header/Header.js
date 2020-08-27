@@ -1,5 +1,5 @@
 // MODULES //
-import React, { useRef } from 'react';
+import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import ReactAudioPlayer from 'react-audio-player';
 
@@ -28,7 +28,7 @@ return (
     <h6 className="idst">Music : IDST - Drm_sqnc</h6>
     <ReactAudioPlayer
     src={Drm_Sqnc}
-    autoPlay="true"
+    autoPlay={true}
     controls
     />
   </Navbar>
