@@ -37,7 +37,7 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide1}
                   alt="First slide"
-                  height={330}
+                  height={350}
                   width={495}
                 />
               </Carousel.Item>
@@ -46,7 +46,7 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide2}
                   alt="second slide"
-                  height={330}
+                  height={350}
                   width={495}
                 />
               </Carousel.Item>
@@ -55,7 +55,7 @@ const Presentation = ({ element }) => {
                   className="d-block w-100"
                   src={Slide3}
                   alt="third slide"
-                  height={330}
+                  height={350}
                   width={495}
                 />
               </Carousel.Item>
