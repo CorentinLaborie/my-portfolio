@@ -57,11 +57,11 @@ class Projects extends React.Component{
               <Card.Body>
                 <Card.Subtitle className="mb-2 text-muted"><i>07/2020</i></Card.Subtitle>
                 <Card.Text>
-                  Ce Portfolio a été entièrement réalisé en React-JS. Pour de plus amples informations : 
+                  Ce Portfolio a été entièrement réalisé en ReactJS. Pour de plus amples informations : 
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-              <a href="mailto:corentin.laborie@epitech.eu"><Button size="xs" variant="outline-dark" className="text-center" type="button" onClick={console.log("FAIT LA NAVBAR")}>Me contacter par mail ?</Button></a>
+              <a href="mailto:corentin.laborie@epitech.eu"><Button size="xs" variant="outline-dark" className="text-center" type="button" onClick={console.log("Bah alors, on vient regarder le code ?")}>Me contacter par mail ?</Button></a>
               </Card.Footer>
             </Card>
           </Col>
@@ -69,7 +69,7 @@ class Projects extends React.Component{
         <Row className="dymed">
           <Col className="screenDYMED">
           <Card style={{ width: 'auto' }} border="success">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="538" height="322" src="https://www.youtube.com/embed/RVh-HFnI5Co" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Card>
           </Col>
           <Col className="descriptionDYMED">
