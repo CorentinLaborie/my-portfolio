@@ -1,7 +1,7 @@
 // MODULES //
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Card, Image, Col, Row, Container, Form, FormControl, Button,ListGroup,ProgressBar } from 'react-bootstrap';
+import { Card, Image, Col, Row, Container, Form,ListGroup,ProgressBar } from 'react-bootstrap';
 
 
 // STYLE //
@@ -26,13 +26,13 @@ import JQueryLog from "../../assets/logos/jquery.png";
 
 const Skills = ({ element }) => {
 
-  const MyHR = ({ color }) => (
-    <hr
-      style={{
-        borderColor: color,
-      }}
-    />
-  );
+  // const MyHR = ({ color }) => (
+  //   <hr
+  //     style={{
+  //       borderColor: color,
+  //     }}
+  //   />
+  // );
 
   const [selectskill, setSelectskill] = useState('choose');
 
@@ -143,7 +143,7 @@ const Skills = ({ element }) => {
       <Container fluid className="SkillfirstContainer">
         <Row>
           <Col xs={4} md={2}></Col>
-          <Col><p className="S-title">MES COMPETENCES</p></Col>
+          <Col className="S-title">MES COMPETENCES</Col>
           <Col xs={4} md={2}></Col>
         </Row>
         <Row>
@@ -167,7 +167,6 @@ const Skills = ({ element }) => {
           </Col>
         </Row>
       </Container>
-      <MyHR color="black" />
     </section>
   )
 }

@@ -1,6 +1,6 @@
 // MODULES //
-import React, { useRef } from 'react';
-import { Card, Carousel, Image, Col, Row, Container } from 'react-bootstrap';
+import React from 'react';
+import { Carousel, Image, Col, Row, Container } from 'react-bootstrap';
 
 // STYLE //
 import "./Presentation.css";

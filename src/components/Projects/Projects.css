@@ -5,20 +5,15 @@
     margin-left: 30% !important;
     margin-top: 5%;
 }
-.S-title {
+
+.p-title {
     text-align: center;
     font-family: "Gill Sans", sans-serif;
     font-size: 26px;
+    color: white;
     border: solid 10px rgba(0, 0, 0, 0.842);
     border-style: double;
     border-spacing: 9px;
-}
-
-.p-title {
-    font-family: "Gill Sans", sans-serif;
-    font-size: 26px;
-    color: white;
-    margin-top: 10px;
 }
 
 .ScreenPHP{

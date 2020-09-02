@@ -1,6 +1,6 @@
 // MODULES //
-import React, {useState} from 'react';
-import { Card, Carousel, Image, Col, Row, Container,Button,Modal, } from 'react-bootstrap';
+import React from 'react';
+import { Card,  Image, Col, Row, Container,Button } from 'react-bootstrap';
 
 import ScreenPHP from "../../assets/screens/css_generator.png";
 
@@ -24,9 +24,9 @@ class Projects extends React.Component{
     <section className="projects">
 
       <Container className="Big-Block" >
-        <Row className="S-title">
+        <Row className="p-title">
           <Col></Col>
-          <Col><p className="p-title">QUELQUES PROJETS :</p></Col>
+          <Col>QUELQUES PROJETS :</Col>
           <Col></Col>
         </Row>
         <Row className="php">

@@ -1,5 +1,5 @@
 // MODULES //
-import React , { Component} from 'react';
+import React from 'react';
 
 
 // COMPONENTS //
@@ -50,7 +50,7 @@ function App() {
             7: Sacred4,
             8: Sacred5, 
           }}
-          how={100} /* You have to pass a number so Sky will render that amount of images chosen randomly from the object you passed in the previous step */
+          how={300} /* You have to pass a number so Sky will render that amount of images chosen randomly from the object you passed in the previous step */
           time={300} /* time of the animation. Dfaults at 20s */
           size={'90px'} /* size of the rendered images. Defaults at 150px */
           background={'none'} /* color of background. Defaults to none */

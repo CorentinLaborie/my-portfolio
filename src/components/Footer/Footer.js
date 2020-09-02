@@ -12,22 +12,19 @@ class Footer extends React.Component {
   render(){
   // AFFICHAGE //
   return (
-    <main>
       <section className="MyFooter">
         <Container fluid className="footer-container">
           <Row>
             <Col></Col>
-            <Col xs={6}>
-              <p className="p-title2">ME CONTACTER</p>
-            </Col>
+            <Col className="p-title2" xs={6}>ME CONTACTER</Col>
             <Col></Col>
           </Row>
           <Row>
             <Col xs={2}></Col>
             <Col>
-              <Card style={{ width: 'auto' }}>
+              <p><Card style={{ width: 'auto', height: 'auto' }}>
                 <Image variant="top" src={Perou} />
-              </Card>
+              </Card></p>
             </Col>
             <Col>
             <div className="CV_DL">
@@ -44,7 +41,6 @@ class Footer extends React.Component {
             </Row>
         </Container>
       </section>
-    </main>
     )
   }
 }
