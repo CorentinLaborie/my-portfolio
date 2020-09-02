@@ -22,7 +22,7 @@ class Footer extends React.Component {
           <Row>
             <Col xs={2}></Col>
             <Col>
-              <p><Card style={{ width: 'auto', height: 'auto' }}>
+              <p className="paddingetaupe"><Card style={{ width: 'auto', height: 'auto' }}>
                 <Image variant="top" src={Perou} />
               </Card></p>
             </Col>
