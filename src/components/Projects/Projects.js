@@ -79,8 +79,9 @@ class Projects extends React.Component{
                 <Card.Subtitle className="mb-2 text-muted"><i>06/2020 Samsung Campus</i></Card.Subtitle>
                 <Card.Text>
                   D.Y.MED est une plateforme E-Commerce réalisée en groupe de 7 personnes dans le cadre de la formation Samsung-Campus.
-                  <br />Ce projet a été fait en partenariat avec l'ESSEC BUSINESS SCHOOL, nous plongeant dans une contexte de Start-up ayant un mois pour créer cette entreprise (Marketing/Developpement).
+                  <br />Ce projet a été fait en partenariat avec l'ESSEC BUSINESS SCHOOL.
                   <br /><br />J'occupais un poste FullStack (Laravel Back / ReactJS front) ainsi qu'environ 50% du poste de Scrum-Master.
+                  <br /><a href="https://dymed.netlify.app/">Visiter ici !</a>
                 </Card.Text>
               </Card.Body>
             </Card>
